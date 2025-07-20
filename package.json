@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vitepress": "^1.0.0-beta.1",
+    "vue": "^3.3.4"
+  },
+  "scripts": {
+    "blog:dev": "vitepress dev blog",
+    "blog:build": "vitepress build blog",
+    "blog:preview": "vitepress preview blog"
+  }
+}
