@@ -6,5 +6,43 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
-    "hide-files.files": []
+    "hide-files.files": [],
+    "frontMatter.taxonomy.contentTypes": [
+        {
+            "name": "default",
+            "pageBundle": false,
+            "fields": [
+                {
+                    "title": "title",
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "title": "date",
+                    "name": "date",
+                    "type": "datetime"
+                },
+                {
+                    "title": "description",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "title": "published",
+                    "name": "published",
+                    "type": "boolean"
+                },
+                {
+                    "title": "layout",
+                    "name": "layout",
+                    "type": "string"
+                },
+                {
+                    "title": "author",
+                    "name": "author",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
 }

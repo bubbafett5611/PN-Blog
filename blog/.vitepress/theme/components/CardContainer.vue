@@ -1,6 +1,6 @@
 <script setup>
 import ArticleCard from "./ArticleCard.vue";
-import { data as articles } from './../index.data.js'
+import { data as articles } from '../index.data.js'
 import { withBase } from 'vitepress'
 </script>
 <template>

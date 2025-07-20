@@ -8,8 +8,13 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/PN-Blog/' },
+      { text: 'Home', link: '/' },
+      { text: 'Our Team', link: '/team' },
     ],
+
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
     search: {
       provider: 'local'
     }

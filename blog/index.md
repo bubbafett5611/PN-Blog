@@ -4,9 +4,10 @@ layout: home
 
 hero:
   name: "Panic Nation"
-  text: "Talk of the Nation!"
-  tagline: Someone's mom is really sad that we are still friends.
+  text: "Blog/News"
+  tagline: Panic Nation is the title given to the ever evolving family of friends that exists in the online space.
+  image:
+    src: public/logos/emblem.png
 ---
 
-<CardContainer/>
-
+<CardContainer />
