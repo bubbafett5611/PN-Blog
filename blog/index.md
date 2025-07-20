@@ -7,7 +7,7 @@ hero:
   text: "Blog/News"
   tagline: Panic Nation is the title given to the ever evolving family of friends that exists in the online space.
   image:
-    src: public/logos/emblem.png
+    src: /PN-Blog/logos/emblem.png
 ---
 
 <CardContainer />
