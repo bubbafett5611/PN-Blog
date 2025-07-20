@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Panic Nation",
   description: "Talk of the Nation!",
+  base: '/PN-Blog/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
