@@ -7,6 +7,7 @@ import ArticleCard from './components/ArticleCard.vue'
 import CardContainer from './components/CardContainer.vue'
 import BlogLayout from './layouts/Blog.vue'
 import AuthorBox from './components/AuthorBox.vue'
+import TeamPage from './components/TeamPage.vue'
 
 
 
@@ -23,5 +24,6 @@ export default {
     app.component('CardContainer', CardContainer)
     app.component('blog', BlogLayout)
     app.component('AuthorBox', AuthorBox)
+    app.component('TeamPage', TeamPage)
   }
 }

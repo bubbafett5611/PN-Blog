@@ -14,9 +14,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { useData } from 'vitepress'
-import bios from '../data/author-bios.json'
+import bios from './data/author-bios.json'
 
 const { frontmatter } = useData()
 const rawName = frontmatter.value.author
@@ -24,21 +24,27 @@ const slug = rawName?.toLowerCase().replace(/\s+/g, '-') || 'unknown'
 
 const authorData = bios[slug] || {
   name: rawName || 'Unknown Author',
-  bio: ''
+  bio: '',
+  avatar: ''
 }
 
 const supportedExtensions = ['webp', 'jpg', 'jpeg', 'png']
 const currentExtensionIndex = ref(0)
-const imageSrc = ref(`/authors/${slug}.${supportedExtensions[0]}`)
+const imageSrc = ref(authorData.avatar || `/authors/${slug}.${supportedExtensions[0]}`)
 
 function onImageError() {
+  if (authorData.avatar) {
+    imageSrc.value = '/authors/default.jpg'
+    return
+  }
+
   currentExtensionIndex.value++
 
   if (currentExtensionIndex.value < supportedExtensions.length) {
     const nextExt = supportedExtensions[currentExtensionIndex.value]
     imageSrc.value = `/authors/${slug}.${nextExt}`
   } else {
-    imageSrc.value = `/authors/default.jpg`
+    imageSrc.value = '/authors/default.jpg'
   }
 }
 </script>
@@ -66,7 +72,6 @@ function onImageError() {
 
 .author-bio {
   font-size: 0.9rem;
-
   margin-top: 0.25rem;
 }
 </style>

@@ -1,6 +1,11 @@
 {
   "bubba": {
     "name": "Bubba",
+    "title": "Creator",
+    "links": [
+      { "icon": "github", "link": "https://github.com/bubba" }
+    ],
+    "avatar": "/avatars/bubba.png",
     "bio": "Bubba is one of the original members of Panic Nation, a Network Engineer by trade, he has a passion for creating tools and utilities that help others."
   }
 }
