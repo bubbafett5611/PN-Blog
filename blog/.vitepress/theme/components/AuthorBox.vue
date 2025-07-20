@@ -30,11 +30,11 @@ const authorData = bios[slug] || {
 
 const supportedExtensions = ['webp', 'jpg', 'jpeg', 'png']
 const currentExtensionIndex = ref(0)
-const imageSrc = ref(authorData.avatar || `/authors/${slug}.${supportedExtensions[0]}`)
+const imageSrc = ref(authorData.avatar || `/PN-Blog/avatars/${slug}.${supportedExtensions[0]}`)
 
 function onImageError() {
   if (authorData.avatar) {
-    imageSrc.value = '/authors/default.jpg'
+    imageSrc.value = '/PN-Blog/avatars/default.jpg'
     return
   }
 
@@ -42,9 +42,9 @@ function onImageError() {
 
   if (currentExtensionIndex.value < supportedExtensions.length) {
     const nextExt = supportedExtensions[currentExtensionIndex.value]
-    imageSrc.value = `/authors/${slug}.${nextExt}`
+    imageSrc.value = `/PN-Blog/avatars/${slug}.${nextExt}`
   } else {
-    imageSrc.value = '/authors/default.jpg'
+    imageSrc.value = '/PN-Blog/avatars/default.jpg'
   }
 }
 </script>
